@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(146, 0, 39);
+}
+
+header {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 800px) {
+    header {
+        flex-direction: row;
+    }
+}
+
+nav {
+    margin-left: auto;
+    padding: 0.3em;
+    line-height: 2em;
+}
+
+nav a {
+    margin: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #dd92a6;
+}
+
+h2, h4, h6, p, small, a, li {
+    font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
+p, a, h6, li {
+    font-size: 1.1em;
+}
+
+small {
+    font-size: 1em;
+    display: block;
+}
+
+.content {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.banner {
+    background-image: url(image/scioto.jpg);
+    padding-top: 8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner, #skills, #projects {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.socials, #skills h3, #projects h3 {
+    background-color: rgb(146, 0, 39);
+}
+
+.headshot {
+    max-width: 500px;
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 3em;
+    align-self: center;
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+.about, .details, #projects article {
+    background-color: #f1f1f1;
+}
+
+.details {
+    padding: 6em 5em;
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+@media only screen and (min-width: 1050px) {
+    .banner {
+        flex-direction: row;
+    }
+
+    .content {
+        width: 1000px;
+        padding-left: calc(50% - 500px);
+        padding-right: calc(50% - 500px);
+    }
+
+    .headshot {
+        border-radius: 0;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .details {
+        display: inline-block;
+    }
+}
+
+h1, h3, h5 {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+h1, h5 {
+    margin-top: 0.5em;
+}
+
+h1, h4, h6, p, small, a, li, strong {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+h5, h6, small {
+    letter-spacing: 1px;
+}
+
+strong, .about p, h3 {
+    font-size: 1.3em;
+}
+
+.banner strong, .about p {
+    line-height: 1.8em;
+}
+
+.socials * {
+    margin: 0.5em 1em;
+}
+
+.about {
+    padding-bottom: 3.5em;
+}
+
+.about *, h3, section > h1, .download {
+    text-align: center;
+}
+
+section > h1 {
+    margin: 1.8em 0 0.5em;
+}
+
+section > p {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 720px) {
+    section > p {
+        width: 700px;
+    }
+}
+
+h3 {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 1.8em;
+    letter-spacing: 2px;
+}
+
+.timeline:first-of-type {
+    margin-top: 1em;
+}
+
+.timeline:last-of-type {
+    margin-bottom: 3em;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline > * {
+    padding: 2em 3em 0;
+    vertical-align: top;
+    position: relative;
+}
+
+@media only screen and (min-width: 800px) {
+    .timeline {
+        flex-direction: row;
+    }
+
+    .title-block {
+        border-right: 1px solid #f1f1f1;
+        flex-grow: 1;
+        flex-basis: 45%;
+    }
+    
+    .title-block * {
+        text-align: right;
+    }
+
+    .content-block {
+        flex-grow: 1;
+        flex-basis: 55%;
+        padding-right: 5em;
+    }
+    
+    .content-block::before, .timeline:first-of-type .title-block::after {
+        position: absolute;
+    }
+    
+    .content-block::before {
+        /* dot */
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: rgb(146, 0, 39);
+        left: -3px;
+        margin-top: 8px;
+    }
+    
+    .timeline:first-of-type .title-block::after {
+        /* hide part of border above first dot */
+        content: "";
+        width: 1px;
+        height: 44px;
+        background-color: white;
+        right: -1px;
+        top: 0;
+    }
+}
+
+.timeline h5 {
+    margin: 0 0 0.2em;
+}
+
+p {
+    line-height: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+h6, li {
+    margin-bottom: 0.3em;
+}
+
+#skills h3, #projects h3 {
+    border-bottom: none;
+}
+
+#skills h3, #projects h3, .skill-container p {
+    color: white;
+    opacity: 0.95;
+}
+
+#skills {
+    background-image: url("image/skills.jpg");
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.skill-container p {
+    font-size: 0.9em;
+    padding: 2.5em 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0.8em 2em;
+    background-color: #ffffff20;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.2em;
+}
+
+li::before {
+    content: "";
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 1px solid #920027;
+    position: absolute;
+    left: 0;
+    top: calc(0.55em + 1px);
+}
+
+.download {
+    display: block;
+    margin: 1em 0 2em;
+    width: 100%;
+}
+
+#projects {
+    background-image: url("image/projects.jpg");
+    padding-bottom: 3em;
+}
+
+#projects article {
+    padding: 3em;
+    margin-top: 3em;
+}
+
+article img {
+    width: 100%;
+    margin: 1em 0;
+}
+
+#projects article h5 {
+    margin: 0.1em 0 0.4em;
+}
+
+footer {
+    padding: 1em 0;
+}
