@@ -137,7 +137,7 @@ small {
 }
 
 h1, h3, h5 {
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Roboto Slab", "Open Sans", "Segoe UI", Tahoma, sans-serif;
 }
 
 h1, h5 {
