@@ -352,7 +352,7 @@ li::before {
 }
 
 #projects {
-    background-image: url("image/projects.jpg");
+    background-image: url("image/projects.svg");
     padding-bottom: 3em;
 }
 
