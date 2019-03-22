@@ -10,20 +10,33 @@ header {
     flex-direction: column;
 }
 
-@media only screen and (min-width: 800px) {
-    header {
+nav {
+    margin-top: 0.3em;
+    padding: 0.3em;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+    nav {
         flex-direction: row;
     }
 }
 
-nav {
-    margin-left: auto;
-    padding: 0.3em;
-    line-height: 2em;
+@media only screen and (min-width: 800px) {
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        margin-top: 0;
+        margin-left: auto;
+    }
 }
 
 nav a {
-    margin: 1.5em;
+    margin-right: 3em;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -73,15 +86,19 @@ small {
     background-color: rgb(146, 0, 39);
 }
 
+.headshot, .details {
+    flex-grow: 1;
+}
+
 .headshot {
     max-width: 500px;
     width: 50%;
+    max-height: 500px;
+    height: 50%;
     border-radius: 50%;
     display: block;
     margin-bottom: 3em;
     align-self: center;
-    flex-grow: 1;
-    flex-basis: 1;
 }
 
 .about, .details, #projects article {
@@ -89,20 +106,22 @@ small {
 }
 
 .details {
-    padding: 6em 5em;
-    flex-grow: 1;
-    flex-basis: 1;
+    padding: 2em;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 600px) {
+    .details {
+        padding: 2em 5em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
     .banner {
         flex-direction: row;
-    }
-
-    .content {
-        width: 1000px;
-        padding-left: calc(50% - 500px);
-        padding-right: calc(50% - 500px);
     }
 
     .headshot {
@@ -112,7 +131,15 @@ small {
     }
 
     .details {
-        display: inline-block;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .content {
+        width: 1000px;
+        padding-left: calc(50% - 500px);
+        padding-right: calc(50% - 500px);
     }
 }
 
@@ -195,9 +222,15 @@ h3 {
 }
 
 .timeline > * {
-    padding: 2em 3em 0;
+    padding: 2em 1em 0;
     vertical-align: top;
     position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+    .timeline > * {
+        padding: 2em 3em 0;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -205,9 +238,12 @@ h3 {
         flex-direction: row;
     }
 
+    .timeline > * {
+        flex-grow: 1;
+    }
+
     .title-block {
         border-right: 1px solid #f1f1f1;
-        flex-grow: 1;
         flex-basis: 45%;
     }
     
@@ -216,7 +252,6 @@ h3 {
     }
 
     .content-block {
-        flex-grow: 1;
         flex-basis: 55%;
         padding-right: 5em;
     }
@@ -279,9 +314,15 @@ h6, li {
 
 .skill-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     padding-top: 3em;
     padding-bottom: 3em;
+}
+
+@media only screen and (min-width: 800px) {
+    .skill-container {
+        grid-template-columns: 50% 50%;
+    }
 }
 
 .skill-container p {
@@ -325,6 +366,12 @@ li::before {
 #projects article {
     padding: 3em;
     margin-top: 3em;
+}
+
+@media only screen and (min-width: 600px) {
+    #projects article {
+        padding: 3em 1em;
+    }
 }
 
 article img {
