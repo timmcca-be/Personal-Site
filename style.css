@@ -71,8 +71,9 @@ small {
 .banner {
     background-image: url(image/scioto.jpg);
     padding-top: 8em;
-    display: flex;
-    flex-direction: column;
+    /* Yeah, this should probably be flex, but Chrome was giving me issues with the image aspect ratio with flex */
+    display: grid;
+    grid-template-columns: 100%;
 }
 
 .banner, #skills, #projects {
@@ -86,19 +87,12 @@ small {
     background-color: rgb(146, 0, 39);
 }
 
-.headshot, .details {
-    flex-grow: 1;
-}
-
 .headshot {
     max-width: 500px;
-    width: 50%;
-    max-height: 500px;
-    height: 50%;
+    width: 50vw;
+    margin: auto;
     border-radius: 50%;
-    display: block;
     margin-bottom: 3em;
-    align-self: center;
 }
 
 .about, .details, #projects article {
@@ -121,12 +115,11 @@ small {
 
 @media only screen and (min-width: 800px) {
     .banner {
-        flex-direction: row;
+        grid-template-columns: 50% 50%;
     }
 
     .headshot {
         border-radius: 0;
-        display: inline-block;
         margin: 0;
     }
 
