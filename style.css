@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    color: rgb(146, 0, 39);
+    color: #920027;
 }
 
 header {
@@ -83,8 +83,8 @@ small {
     background-size: cover;
 }
 
-.socials, #skills h3, #projects h3 {
-    background-color: rgb(146, 0, 39);
+.socials, #skills h3, #projects h3, #skills, #projects {
+    background-color: #920027;
 }
 
 .headshot {
@@ -259,7 +259,7 @@ h3 {
         width: 5px;
         height: 5px;
         border-radius: 50%;
-        background-color: rgb(146, 0, 39);
+        background-color: #920027;
         left: -3px;
         margin-top: 8px;
     }
