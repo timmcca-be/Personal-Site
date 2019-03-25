@@ -61,7 +61,7 @@ h2 {
     font-size: 1.7em;
 }
 
-p, a, h6, li {
+p, .download, h6, li {
     font-size: 1.1em;
 }
 
