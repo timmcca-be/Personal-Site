@@ -61,7 +61,7 @@ h2 {
     font-size: 1.7em;
 }
 
-p, .download, h6, li {
+p, h6, li {
     font-size: 1.1em;
 }
 
@@ -106,7 +106,7 @@ small {
     background-color: #f1f1f1;
 }
 
-.details, .about *, h3, section > h1, .download, .skill-container p {
+.details, .socials, h3, section > h1, section > p, .skill-container p {
     text-align: center;
 }
 
@@ -350,9 +350,7 @@ li::before {
 }
 
 .download {
-    display: block;
-    margin: 1em 0 2em;
-    width: 100%;
+    margin: 1em auto 2em;
 }
 
 #projects {
