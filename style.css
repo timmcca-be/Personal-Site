@@ -178,8 +178,8 @@ strong, .about p, h3 {
     line-height: 1.8em;
 }
 
-.socials * {
-    margin: 0.5em 1em;
+.socials img {
+    margin: 0.5em 2em;
 }
 
 .about {
