@@ -170,11 +170,11 @@ h5, h6, small {
     letter-spacing: 1px;
 }
 
-strong, .about p, h3 {
+strong, section > p, h3 {
     font-size: 1.3em;
 }
 
-.banner strong, .about p {
+.banner strong, section > p {
     line-height: 1.8em;
 }
 
@@ -330,6 +330,10 @@ h6, li {
     letter-spacing: 2px;
     margin: 0.8em 2em;
     background-color: #ffffff20;
+}
+
+.career-goals {
+    margin-top: 1.8em;
 }
 
 li {
