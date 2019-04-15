@@ -343,14 +343,11 @@ li {
 }
 
 li::before {
-    content: "";
-    width: 0.17em;
-    height: 0.17em;
-    border-radius: 50%;
-    border: 1px solid #920027;
+    content: "\25cb";
     position: absolute;
     left: 0;
-    top: 0.635em;
+    top: 0.7em;
+    font-size: 0.5em;
 }
 
 .download {
