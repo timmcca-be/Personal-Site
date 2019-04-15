@@ -262,19 +262,19 @@ h3 {
     .content-block::before {
         /* dot */
         content: "";
-        width: 5px;
-        height: 5px;
+        width: 0.3125em;
+        height: 0.3125em;
         border-radius: 50%;
         background-color: #920027;
-        left: -3px;
-        margin-top: 8px;
+        left: calc(-0.15625em - 0.5px);
+        margin-top: 0.5em;
     }
     
     .timeline:first-of-type .title-block::after {
         /* hide part of border above first dot */
         content: "";
         width: 1px;
-        height: 44px;
+        height: 2.75em;
         background-color: white;
         right: -1px;
         top: 0;
@@ -344,13 +344,13 @@ li {
 
 li::before {
     content: "";
-    width: 3px;
-    height: 3px;
+    width: 0.17em;
+    height: 0.17em;
     border-radius: 50%;
     border: 1px solid #920027;
     position: absolute;
     left: 0;
-    top: calc(0.55em + 1px);
+    top: 0.635em;
 }
 
 .download {
