@@ -350,7 +350,7 @@ li::before {
     border: 1px solid #920027;
     position: absolute;
     left: 0;
-    top: 0.55em;
+    top: 0.55rem;
 }
 
 .download {
