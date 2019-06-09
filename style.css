@@ -70,8 +70,11 @@ small {
     display: block;
 }
 
-.content {
+.content, ul {
     padding-left: 1em;
+}
+
+.content {
     padding-right: 1em;
 }
 
@@ -337,21 +340,8 @@ h6, li {
 }
 
 li {
-    list-style-type: none;
-    position: relative;
-    padding-left: 1.2em;
-}
-
-li::before {
-    content: "";
-    width: 0.17em;
-    height: 0.17em;
-    border-radius: 50%;
-    border: 1px solid #920027;
-    position: absolute;
-    left: 0;
-    top: 0.55em;
-    top: 0.55rem;
+    list-style: circle;
+    padding-left: 0.4em;
 }
 
 .download {
