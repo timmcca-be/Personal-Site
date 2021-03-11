@@ -79,7 +79,7 @@ small {
 }
 
 .banner {
-    background-image: url(image/scioto.jpg);
+    background-image: url(image/scioto.webp);
     padding-top: 8em;
     /* Yeah, this should probably be flex, but Chrome was giving me issues with the image aspect ratio with flex */
     display: grid;
@@ -315,7 +315,7 @@ h6, li {
 }
 
 #skills {
-    background-image: url("image/skills.jpg");
+    background-image: url("image/skills.webp");
 }
 
 .skill-container {
