@@ -30,7 +30,11 @@
         </header>
         <main>
             <section class="banner content">
-                <img class="headshot" alt="My face!" src="image/headshot.jpg">
+                <picture class="headshot-picture">
+                    <source srcset="image/headshot.webp" type="image/webp">
+                    <source srcset="image/headshot.jpg" type="image/jpeg"> 
+                    <img class="headshot" src="image/headshot.jpg" alt="My face!">
+                </picture>
                 <article class="details">
                     <div>
                         <h1>Tim McCabe</h1>
@@ -164,7 +168,11 @@
                     <article>
                         <h1>Music Tool</h1>
                         <a href="https://music-tool.timmcca.be/#/" target="_blank">Click here to try the Music Tool!</a>
-                        <img alt="Screenshot of my music tool" src="image/music-tool.png">
+                        <picture>
+                            <source srcset="image/music-tool.webp" type="image/webp">
+                            <source srcset="image/music-tool.png" type="image/png"> 
+                            <img src="image/music-tool.png" alt="Screenshot of my music tool">
+                        </picture>
                         <small><em>Jan 2017 - Apr 2017</em></small>
                         <h5>Technologies: Preact, Web Audio API</h5>
                         <p>I used Preact, a lightweight clone of React, to develop this chord finder and player. You can select a key center,
@@ -176,7 +184,11 @@
                     <article>
                         <h1>PAG Tour</h1>
                         <a href="https://modelshonorsexp.github.io/" target="_blank">Click here to play PAG Tour!</a>
-                        <img alt="Screenshot of PAG Tour, a golf video game" src="image/pag.png">
+                        <picture>
+                            <source srcset="image/pag.webp" type="image/webp">
+                            <source srcset="image/pag.png" type="image/png"> 
+                            <img src="image/pag.png" alt="Screenshot of PAG Tour, a golf video game">
+                        </picture>
                         <small><em>Jan 2017 - Apr 2017</em></small>
                         <h5>Technologies: MATLAB, JavaScript, HTML5</h5>
                         <p>I worked with a group of three other students to produce an accurate simulation of air resistance and lift
@@ -189,7 +201,11 @@
                     </article>
                     <article>
                         <h1>Mario Kart AI</h1>
-                        <img alt="Screenshot of Super Mario Kart" src="image/mario.png">
+                        <picture>
+                            <source srcset="image/mario.webp" type="image/webp">
+                            <source srcset="image/mario.png" type="image/png"> 
+                            <img class="mario-kart" src="image/mario.png" alt="Screenshot of Super Mario Kart">
+                        </picture>
                         <small><em>Nov 2017 - Dec 2017</em></small>
                         <h5>Technologies: Python, Lua</h5>
                         <p>I created this project as a way to learn the fundamentals of neural networks and genetic algorithms while

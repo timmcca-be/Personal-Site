@@ -105,6 +105,11 @@ small {
     margin-bottom: 3em;
 }
 
+.headshot-picture {
+    max-height: 500px;
+    margin: auto;
+}
+
 .about, .details, #projects article {
     background-color: #f1f1f1;
 }
@@ -137,7 +142,6 @@ small {
 
     .headshot {
         border-radius: 0;
-        margin: 0;
     }
 
     .details {
@@ -375,4 +379,8 @@ article img {
 
 footer {
     padding: 1em 0;
+}
+
+.mario-kart {
+    image-rendering: crisp-edges;
 }
