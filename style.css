@@ -4,6 +4,10 @@
     color: #920027;
 }
 
+header, #resume, footer {
+    background-color: white;
+}
+
 header {
     padding: 1.5em;
     display: flex;
@@ -79,21 +83,20 @@ small {
 }
 
 .banner {
-    background-image: url(image/scioto.webp);
     padding-top: 8em;
     /* Yeah, this should probably be flex, but Chrome was giving me issues with the image aspect ratio with flex */
     display: grid;
     grid-template-columns: 100%;
 }
 
-.banner, #skills, #projects {
+#skills, #projects {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.socials, #skills h3, #projects h3, #skills, #projects {
+.socials, #skills h3, #projects h3, #skills {
     background-color: #920027;
 }
 
@@ -349,7 +352,7 @@ li {
 }
 
 .download {
-    margin: 1em auto 2em;
+    margin: 0 auto;
 }
 
 #projects {
@@ -383,4 +386,53 @@ footer {
 
 .mario-kart {
     image-rendering: crisp-edges;
+}
+
+#background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    opacity: 0.5;
+    font-family: Consolas, 'Courier New', monospace;
+    font-weight: normal;
+    white-space: pre;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+    background-color: #bbc5d7;
+}
+
+.editorLineNumber {
+    width: 3vw;
+    text-align: right;
+    margin-right: 2vw;
+    display: inline-block;
+    color: gray;
+}
+
+.background-code-tag {
+    color: #8c3c3c;
+}
+
+.background-code-punctuation {
+    color: #000000;
+}
+
+.background-code-attribute {
+    color: #6f42c1;
+}
+
+.background-code-value {
+    color: #032f62;
+}
+
+.background-code-keyword {
+    color: #005cc5;
+}
+
+#resume {
+    padding-bottom: 2rem;
 }
