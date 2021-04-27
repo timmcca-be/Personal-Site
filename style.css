@@ -70,7 +70,7 @@ small {
 }
 
 .banner {
-    padding-top: 8em;
+    padding-top: 3em;
     /* Yeah, this should probably be flex, but Chrome was giving me issues with the image aspect ratio with flex */
     display: grid;
     grid-template-columns: 100%;
@@ -124,6 +124,7 @@ small {
 
 @media only screen and (min-width: 800px) {
     .banner {
+        padding-top: 8em;
         grid-template-columns: 50% 50%;
     }
 
