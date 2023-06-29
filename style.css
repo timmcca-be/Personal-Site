@@ -310,14 +310,14 @@ h6, li {
 
 .skill-container {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     padding-top: 3em;
     padding-bottom: 3em;
 }
 
 @media only screen and (min-width: 800px) {
     .skill-container {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
